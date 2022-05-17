@@ -14,13 +14,14 @@ function collatz(starting) {
 
         if (currentNumber % 2 === 0) {
             draft = currentNumber / 2;
-            x.push(draft);
-            currentNumber = draft;
         } else if (currentNumber % 2 === 1) {
             draft = currentNumber * 3 + 1;
-            x.push(draft);
-            currentNumber = draft;
+        } else {
+            return "INVALID NUMBER";
         }
+
+        x.push(draft);
+        currentNumber = draft;
     }
 
     return x;
