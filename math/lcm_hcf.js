@@ -31,4 +31,6 @@ const f = {
     lcm,
 };
 
+console.log(hcf(15));
+
 export default f;
