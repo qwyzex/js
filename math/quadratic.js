@@ -24,7 +24,7 @@ function perfect(a, b, c) {
         right += -c;
         right += bothSegment;
         right = Math.sqrt(right);
-        x = [right + b / 2, -right + b / 2];
+        x = [right + -b / 2, -right + -b / 2];
     }
 
     return [x, right];
